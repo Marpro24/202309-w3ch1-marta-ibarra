@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,23 @@
   <link rel="stylesheet" href="styles/styles.css">
   <title>Email</title>
 </head>
+
 <body>
-  
+  <h1>Envia un correo</h1>
+  <main>
+    <form class="form">
+      <label for="sender">Remitente</label>
+      <input type="text" id="sender" />
+      <label for="recipient">Destinatario</label>
+      <input type="text" id="recipient">
+      <label for="subject">Asunto</label>
+      <textarea id="subject"></textarea>
+      <label for="attach-file">Archivo adjunto</label>
+      <input type="file">
+      <label for="program">Programar envio</label>
+      <input type="checkbox">
+    </form>
+  </main>
 </body>
+
 </html>

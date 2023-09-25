@@ -22,3 +22,8 @@ a {
   text-decoration: none;
   color: inherit;
 }
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
