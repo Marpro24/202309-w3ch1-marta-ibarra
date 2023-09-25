@@ -4,12 +4,6 @@
   box-sizing: border-box;
 }
 body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 p {
   margin: 0;
 }
@@ -17,6 +11,9 @@ p {
 a {
   text-decoration: none;
   color: inherit;
+}
+main {
+  background-color: lightsteelblue;
 }
 
 .header-1 {
@@ -38,4 +35,13 @@ a {
 .input {
   padding: 10px;
   margin: 10px;
+  gap: 15px;
+}
+
+.label {
+  font-size: 18px;
+}
+.checkbox {
+  width: 257px;
+  height: 24px;
 }
