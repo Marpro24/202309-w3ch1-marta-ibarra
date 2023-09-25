@@ -45,3 +45,9 @@ main {
   width: 257px;
   height: 24px;
 }
+
+.button {
+  margin-top: 10px;
+  width: 90px;
+  height: 32px;
+}
