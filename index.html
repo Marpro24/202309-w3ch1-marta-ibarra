@@ -7,28 +7,32 @@
   <meta name="description" content="email form">
   <link rel="shortcut icon" href="images/email.png" type="image/x-icon">
   <link rel="stylesheet" href="styles/styles.css">
+  <script src="js/index.js"></script>
+  <script src="js/validate.js"></script>
   <title>Email</title>
 </head>
 
 <body>
-  <h1 class="header-1"> Envia un correo</h1>
+  <h1 class="header-1"> Envía un correo</h1>
   <main>
     <form class="form">
       <label class="label" for="sender">Remitente</label>
-      <input class="input" type="text" id="sender" value="poor-student@isdicoders.com" />
+      <input class="input" type="text" id="sender" value="poor-student@isdicoders.com" required />
       <label class="label" for="recipient">Destinatario</label>
-      <input class="input" type="text" id="recipient">
+      <input class="input" type="text" id="recipient" required>
       <label class="label" for="subject">Asunto</label>
-      <input class="input" type="text" id="subject">
+      <input class="input" type="text" id="subject" required>
       <label class="label" for="body">Cuerpo</label>
-      <textarea id="body"></textarea>
+      <textarea id="body" required></textarea>
       <label class="label" for="attach-file">Archivo adjunto</label>
-      <input class="input" type="file">
+      <input class="input" type="file" id="attach-file">
       <label class="label" for="program">Programar envio</label>
-      <input class="checkbox" type="checkbox">
-      <label class="label" for="date">Fecha y Hora </labe l>
-        <input type="date">
-        <button class="button" type="submit">Enviar</button>
+      <input class="checkbox" type="checkbox" id="program" onclick="showSetDateAndTime()">
+      <section class="set-date">
+        <label class="label" for="date">Fecha y Hora </label>
+        <input type="date" id="date" required>
+      </section>
+      <button class="button" type="submit">Enviar</button>
     </form>
   </main>
 </body>
